@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #000;
+  background: #fff;
+}
+
+[data-theme='dark'] body {
+  color: #fff;
+  background: #171819;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #011B41;
+  border-radius: 18px;
+}
