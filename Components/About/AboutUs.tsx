@@ -9,7 +9,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <Box className="dark:bg-primary text-neutral">
+      <Box className="dark:bg-primary">
         <Box
           sx={{
             backgroundImage: `url('https://i.ibb.co/6JpY31S/about-us-banner.webp')`,
