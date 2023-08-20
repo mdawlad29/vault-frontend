@@ -1,16 +1,11 @@
 "use client";
 import { Box, Grid, Typography } from "@mui/material";
-import aboutUs from "../../public/assets/images/userOne.png";
-import Image from "next/image";
 import CountUp from "react-countup";
-import React from "react";
 import dynamic from "next/dynamic";
-import { descriptions } from "@/Data/DummyData";
 const OurServices = dynamic(() => import("./OurServices"), { ssr: false });
 const OurStrength = dynamic(() => import("./OurStrength"), { ssr: false });
 
 const AboutUs = () => {
-  const [moreDesc, setMoreDesc] = React.useState(false);
 
   return (
     <>
@@ -141,67 +136,12 @@ const AboutUs = () => {
               </Grid>
             </Grid>
           </Box>
-          {/*------- About Info Section ----------*/}
-          <Grid
-            container
-            spacing={{ md: 16, xs: 2 }}
-            justifyItems={"center"}
-            alignItems={"center"}
-          >
-            <Grid item xs={12} md={6}>
-              <Box className="bg-gray-100 dark:bg-secondary rounded-xl hover:scale-105 duration-300 ease-in-out mx-auto">
-                <Image
-                  src={aboutUs}
-                  alt="About us Image"
-                  width={"0"}
-                  height={"0"}
-                  priority
-                  className="object-contain lg:-mt-36 -mt-20 mx-auto"
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box
-                mt={{ xs: 5 }}
-                textAlign={{ md: "start", xs: "center" }}
-                className="space-y-5"
-              >
-                <Typography
-                  component={"div"}
-                  variant="h4"
-                  display={"block"}
-                  fontSize={{ md: 45, sm: 45, xs: 24 }}
-                  className="dark:text-darkTextColor "
-                  textTransform={"capitalize"}
-                >
-                  about our company
-                </Typography>
-                <Typography
-                  component={"div"}
-                  variant="subtitle2"
-                  display={"block"}
-                  textTransform={"capitalize"}
-                  textAlign={"justify"}
-                >
-                  {!moreDesc ? descriptions.substring(0, 600) : descriptions}
-                  <button
-                    className="mx-1 hover:underline text-secondary"
-                    onClick={() => {
-                      setMoreDesc(!moreDesc);
-                    }}
-                  >
-                    {!moreDesc ? "Learn more..." : "More less"}
-                  </button>
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
           {/*--------- Our Services ---------*/}
-          <Box className="py-20">
+          <Box>
             <OurServices />
           </Box>
           {/*--------- Our Strength ---------*/}
-          <Box className="py-20">
+          <Box>
             <OurStrength />
           </Box>
         </Box>
