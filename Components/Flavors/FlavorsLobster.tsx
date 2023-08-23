@@ -32,14 +32,14 @@ const FlavorsLobster = () => {
                 fontSize={12}
                 textTransform={"uppercase"}
                 sx={{ letterSpacing: "0.3em", mb: 2 }}
-                className="text-primary"
+                className="text-primary lg:text-start text-center"
               >
                 FLAVORS FOR ROYALTY
               </Typography>
               <Image
                 src={RestaurantOrnament}
                 alt="Hero Subtitle Image"
-                className="w-28"
+                className="w-28 lg:mx-0 mx-auto"
                 width={400}
                 height={400}
                 priority
@@ -53,13 +53,13 @@ const FlavorsLobster = () => {
                 height={400}
                 priority
               />
-              <Box className="space-y-6 md:pr-20 lg:pr-16">
+              <Box className="space-y-6">
                 <Typography
                   component="div"
                   variant="h3"
                   display={"block"}
                   fontSize={{ md: 48, sm: 36, xs: 24 }}
-                  className="dark:text-neutral"
+                  className="dark:text-neutral lg:text-start text-center"
                   mt={6}
                 >
                   Lobster Tortellini
@@ -80,7 +80,7 @@ const FlavorsLobster = () => {
                   galley of type and scrambled make a type specimen book
                 </Typography>
                 {/*--- Price ---*/}
-                <Box className="flex items-center gap-6">
+                <Box className="flex lg:justify-start justify-center items-center gap-6">
                   <Typography
                     component="span"
                     variant="subtitle1"
@@ -99,7 +99,7 @@ const FlavorsLobster = () => {
                   </Typography>
                 </Box>
                 {/*--- Button ---*/}
-                <Box>
+                <Box textAlign={{ md: "start", sm: "center", xs: "center" }}>
                   <Link href="/reservation">
                     <Button
                       sx={{
