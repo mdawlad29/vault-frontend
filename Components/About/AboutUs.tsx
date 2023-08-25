@@ -54,13 +54,13 @@ const AboutUs = () => {
             </Box>
           </Box>
         </Box>
-        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="space-y-7 pb-7">
+        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:space-y-20 md:space-y-14 space-y-8 lg:py-28 py-10">
           {/*--------- We Are ---------*/}
           <Box>
             <WeAre />
           </Box>
           {/*------- Counter Section ---------*/}
-          <Box className="relative bg-gray-100 dark:bg-secondary md:py-10 py-4 lg:-mt-40 md:-mt-40 -mt-36 shadow-lg rounded-md">
+          <Box>
             <Grid container item spacing={2}>
               {/*---- Daily Order -----*/}
               <Grid item xs={6} md={3}>
@@ -173,7 +173,6 @@ const AboutUs = () => {
               </Grid>
             </Grid>
           </Box>
-
           {/*--------- Our Services ---------*/}
           <Box>
             <OurServices />

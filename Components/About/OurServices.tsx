@@ -6,19 +6,38 @@ import icon from "../../public/assets/images/doorDelivery.png";
 import icon1 from "../../public/assets/images/dining.png";
 import icon2 from "../../public/assets/images/outdoor.png";
 import icon3 from "../../public/assets/images/banquets.png";
+import RestaurantOrnament from "../../public/assets/images/RestaurantOrnament.png";
 
 const OurServices = () => {
   return (
     <>
       <Typography
-        component={"div"}
-        variant="h4"
+        component="div"
+        variant={"subtitle2"}
+        fontSize={12}
+        textAlign={"center"}
+        textTransform={"uppercase"}
+        sx={{ letterSpacing: "0.3em", mb: 2 }}
+        className="text-primary"
+      >
+        our services
+      </Typography>
+      <Image
+        src={RestaurantOrnament}
+        alt="Hero Subtitle Image"
+        className="w-28 mx-auto"
+      />
+      <Typography
+        component="div"
+        variant="h3"
         display={"block"}
         textAlign={"center"}
-        py={4}
-        className="dark:text-darkTextColor"
+        fontSize={{ md: 48, sm: 36, xs: 24 }}
+        className="dark:text-neutral z-10 mx-auto"
+        width={{ md: 800, xs: 1 }}
+        my={5}
       >
-        Our Services
+        Exquisite Restaurant in City
       </Typography>
       <Grid container spacing={2} justifyItems={"center"} alignItems={"center"}>
         {/*------ Left Info -------*/}
@@ -31,7 +50,7 @@ const OurServices = () => {
                   <Image
                     src={icon}
                     alt="Icon"
-                    className="bg-gray-800 p-3 rounded-full flex justify-center items-center w-24 h-24"
+                    className="bg-secondary p-3 rounded-full flex justify-center items-center w-24 h-24"
                   />
                 </Box>
                 <Box>
@@ -39,7 +58,7 @@ const OurServices = () => {
                     component={"div"}
                     variant="h6"
                     display={"block"}
-                    className="dark:text-darkTextColor md:text-start text-center"
+                    className="dark:text-neutral md:text-start text-center"
                   >
                     Door Delivery
                   </Typography>
@@ -48,9 +67,10 @@ const OurServices = () => {
                     variant="subtitle2"
                     display="block"
                     textAlign="justify"
+                    className="text-gray-400"
                   >
-                    The Life Of The People Of This Beloved Country And Connect
-                    Bangladesh.
+                    Lorem Ipsum is simply dummy printing and typeset industry
+                    lorem Ipsum has been.
                   </Typography>
                 </Box>
               </Box>
@@ -63,7 +83,7 @@ const OurServices = () => {
                     component={"div"}
                     variant="h6"
                     display={"block"}
-                    className="dark:text-darkTextColor md:text-right text-center"
+                    className="dark:text-neutral md:text-right text-center"
                   >
                     Fine Dining
                   </Typography>
@@ -72,16 +92,17 @@ const OurServices = () => {
                     variant="subtitle2"
                     display="block"
                     textAlign="justify"
+                    className="text-gray-400"
                   >
-                    The Life Of The People Of This Beloved Country And Connect
-                    Bangladesh.
+                    Lorem Ipsum is simply dummy printing and typeset industry
+                    lorem Ipsum has been.
                   </Typography>
                 </Box>
                 <Box className="mx-auto order-1 md:order-2">
                   <Image
                     src={icon1}
                     alt="Icon"
-                    className="bg-gray-800 p-3 rounded-full flex justify-center items-center w-24 h-24"
+                    className="bg-secondary p-3 rounded-full flex justify-center items-center w-24 h-24"
                   />
                 </Box>
               </Box>
@@ -108,7 +129,7 @@ const OurServices = () => {
                   <Image
                     src={icon2}
                     alt="Icon"
-                    className="bg-gray-800 p-3 rounded-full flex justify-center items-center w-24 h-24"
+                    className="bg-secondary p-3 rounded-full flex justify-center items-center w-24 h-24"
                   />
                 </Box>
                 <Box>
@@ -116,7 +137,7 @@ const OurServices = () => {
                     component={"div"}
                     variant="h6"
                     display={"block"}
-                    className="dark:text-darkTextColor md:text-start text-center"
+                    className="dark:text-neutral md:text-start text-center"
                   >
                     Outdoor Catering
                   </Typography>
@@ -125,9 +146,10 @@ const OurServices = () => {
                     variant="subtitle2"
                     display="block"
                     textAlign="justify"
+                    className="text-gray-400"
                   >
-                    The Life Of The People Of This Beloved Country And Connect
-                    Bangladesh.
+                    Lorem Ipsum is simply dummy printing and typeset industry
+                    lorem Ipsum has been.
                   </Typography>
                 </Box>
               </Box>
@@ -140,7 +162,7 @@ const OurServices = () => {
                     component={"div"}
                     variant="h6"
                     display={"block"}
-                    className="dark:text-darkTextColor md:text-right text-center"
+                    className="dark:text-neutral md:text-right text-center"
                   >
                     Banquets Hall
                   </Typography>
@@ -149,16 +171,17 @@ const OurServices = () => {
                     variant="subtitle2"
                     display="block"
                     textAlign="justify"
+                    className="text-gray-400"
                   >
-                    The Life Of The People Of This Beloved Country And Connect
-                    Bangladesh.
+                    Lorem Ipsum is simply dummy printing and typeset industry
+                    lorem Ipsum has been.
                   </Typography>
                 </Box>
                 <Box className="mx-auto order-1 md:order-2">
                   <Image
                     src={icon3}
                     alt="Icon"
-                    className="bg-gray-800 p-3 rounded-full flex justify-center items-center w-24 h-24"
+                    className="bg-secondary p-3 rounded-full flex justify-center items-center w-24 h-24"
                   />
                 </Box>
               </Box>
