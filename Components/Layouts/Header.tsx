@@ -53,10 +53,13 @@ const navItems = [
   { name: "BLOG", link: "/restaurent/blog" },
   { name: "CONTACT US", link: "/restaurent/contact-us" },
 ];
+const activeColor = "text-primary";
+const inactiveColor = "dark:!text-neutral !text-gray-900";
 
 const Header = (props: Props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [active, setActive] = React.useState(navItems[0]?.name);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -220,6 +223,7 @@ const Header = (props: Props) => {
                     </Box>
                   </Link>
                 </Typography>
+                {/*---- Item ----*/}
                 <Box
                   sx={{
                     display: { xs: "none", sm: "none", md: "block" },
@@ -237,13 +241,17 @@ const Header = (props: Props) => {
                             color: "#E4C590 !important",
                           },
                         }}
-                        className="dark:!text-neutral !text-gray-900"
+                        className={`${
+                          active === item.name ? activeColor : inactiveColor
+                        } mx-2`}
+                        onClick={() => setActive(item.name)}
                       >
                         {item?.name}
                       </Button>
                     </Link>
                   ))}
                 </Box>
+                {/*--- Button ----*/}
                 <Box
                   sx={{
                     flexGrow: 1,
