@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography, Button } from "@mui/material";
 import RestaurantOrnament from "../../public/assets/images/RestaurantOrnament.png";
 import Image from "next/image";
 import CustomTabs from "@/Shared/CustomTabs";

@@ -145,3 +145,42 @@ export const clientUsers = [
     image: icon3,
   },
 ];
+
+export const MenuData = [
+  {
+    name: "lasagne",
+    image: img3,
+    price: "40.00",
+    desc: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+  },
+  {
+    name: "Butternut Pumpkin",
+    image: img5,
+    price: "40.00",
+    desc: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+  },
+  {
+    name: "Opu Fish",
+    image: img6,
+    price: "25.50",
+    desc: "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.",
+  },
+  {
+    name: "tokusen wagyu",
+    image: img2,
+    price: "39.00",
+    desc: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+  },
+  {
+    name: "olivas rellenas",
+    image: img4,
+    price: "25.50",
+    desc: "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.",
+  },
+  {
+    name: "greek salad",
+    image: img1,
+    price: "25.50",
+    desc: "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.",
+  },
+];

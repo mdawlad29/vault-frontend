@@ -56,7 +56,7 @@ const AboutUs = () => {
             </Box>
           </Box>
         </Box>
-        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }}>
+        <Box >
           {/*--------- We Are ---------*/}
           <WeAre />
           {/*------- Counter Section ---------*/}
