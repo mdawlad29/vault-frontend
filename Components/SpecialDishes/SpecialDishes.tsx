@@ -53,7 +53,7 @@ const SpecialDishes = () => {
                 width={600}
                 height={600}
                 priority
-                className="h-[50vh]"
+                className="w-full h-[50vh]"
               />
             </Box>
           </Box>
