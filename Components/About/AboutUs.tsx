@@ -4,6 +4,7 @@ import CountUp from "react-countup";
 import dynamic from "next/dynamic";
 import heroImg from "../../public/assets/images/RestaurantOrnament.png";
 import Image from "next/image";
+const Clients = dynamic(() => import("./Clients"), { ssr: false });
 const Award = dynamic(() => import("./Award"), { ssr: false });
 const WeAre = dynamic(() => import("./WeAre"), { ssr: false });
 const OurServices = dynamic(() => import("./OurServices"), { ssr: false });
@@ -12,7 +13,7 @@ const OurStrength = dynamic(() => import("./OurStrength"), { ssr: false });
 const AboutUs = () => {
   return (
     <>
-      <Box className="dark:bg-primary">
+      <Box className="dark:bg-primary lg:space-y-20 md:space-y-16 space-y-7">
         <Box
           pt={{ md: 8, sm: 3, xs: 0 }}
           sx={{
@@ -55,16 +56,11 @@ const AboutUs = () => {
             </Box>
           </Box>
         </Box>
-        <Box
-          sx={{ px: { md: 8, sm: 4, xs: 3 } }}
-          className="lg:space-y-20 md:space-y-14 space-y-8 lg:py-28 py-10"
-        >
+        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }}>
           {/*--------- We Are ---------*/}
-          <Box>
-            <WeAre />
-          </Box>
+          <WeAre />
           {/*------- Counter Section ---------*/}
-          <Box>
+          <Box mt={8} border={"1px solid red"}>
             <Grid container item spacing={2}>
               {/*---- Daily Order -----*/}
               <Grid item xs={6} md={3}>
@@ -179,15 +175,15 @@ const AboutUs = () => {
           </Box>
         </Box>
         {/*--------- Award ---------*/}
-        <Box>
-          <Award />
-        </Box>
+        <Award />
         {/*--------- Our Services ---------*/}
-        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:py-28 py-10">
+        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }}>
           <OurServices />
         </Box>
+        {/*--------- Client Service ---------*/}
+        <Clients />
         {/*--------- Our Strength ---------*/}
-        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:pb-28 pb-10">
+        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:pb-36 pb-12">
           <OurStrength />
         </Box>
       </Box>
