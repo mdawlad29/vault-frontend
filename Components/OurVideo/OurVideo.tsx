@@ -48,7 +48,10 @@ const OurVideo = () => {
               >
                 Watch Our Video
               </Typography>
-              <Box my={2} className="w-16 h-16 mx-auto rounded-full text-primary flex justify-center items-center cursor-pointer animate-ping bg-black opacity-50">
+              <Box
+                my={2}
+                className="w-16 h-16 mx-auto rounded-full text-primary flex justify-center items-center cursor-pointer animate-ping bg-black opacity-50"
+              >
                 <AiFillPlayCircle className="border border-neutral flex justify-center items-center rounded-full w-9 h-9 text-neutral" />
               </Box>
               <Typography
@@ -76,14 +79,14 @@ const OurVideo = () => {
               <Grid container spacing={2}>
                 {[...Array(4)]?.map((_, index) => (
                   <Grid key={index} item xs={6} sm={4} md={3}>
-                    <Box className="text-neutral flex items-center gap-3 mx-6">
+                    <Box className="text-neutral flex items-center gap-3 md:mx-6">
                       <Typography
                         component={"div"}
                         variant="h3"
                         display={"block"}
                         textAlign={"center"}
                         className=""
-                        fontSize={{ md: 50, sm: 42, xs: 35 }}
+                        fontSize={{ md: 50, sm: 42, xs: 27 }}
                       >
                         <CountUp
                           end={
