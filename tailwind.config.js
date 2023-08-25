@@ -32,7 +32,7 @@ module.exports = {
         darkTextColor: "#f3c26b",
       },
       borderColor: {
-        primary: "#171819",
+        primary: "#E4C590",
         secondary: "#FFBF3B",
         neutral: "#fff",
       },

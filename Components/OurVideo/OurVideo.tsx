@@ -16,13 +16,13 @@ const OurVideo = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           objectFit: "contain",
-          height: { md: "120vh", sm: "150vh" },
+          height: { md: "125vh", sm: "150vh" },
         }}
         py={{ md: 8, sm: 15, xs: 10 }}
       >
         <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }}>
           <Box className="flex justify-center items-center h-screen">
-            <Box className="space-y-8">
+            <Box className="space-y-10">
               <Typography
                 component="div"
                 variant={"subtitle2"}
@@ -44,18 +44,18 @@ const OurVideo = () => {
                 variant="h3"
                 display={"block"}
                 fontSize={{ md: 48, sm: 36, xs: 24 }}
-                className="dark:text-neutral text-center capitalize"
+                className="text-neutral text-center capitalize"
               >
                 Watch Our Video
               </Typography>
-              <Box className="w-28 h-28 mx-auto rounded-full border-4 border-neutral text-primary flex justify-center items-center cursor-pointer">
-                <AiFillPlayCircle className="text-7xl" />
+              <Box my={2} className="w-16 h-16 mx-auto rounded-full text-primary flex justify-center items-center cursor-pointer animate-ping bg-black opacity-50">
+                <AiFillPlayCircle className="border border-neutral flex justify-center items-center rounded-full w-9 h-9 text-neutral" />
               </Box>
               <Typography
                 component="div"
                 variant="h4"
                 display={"block"}
-                className="dark:text-neutral text-center mx-auto px-4"
+                className="text-neutral text-center mx-auto px-4"
                 width={{ md: 690, xs: 1 }}
                 fontSize={{ md: 36, sm: 36, xs: 20 }}
               >

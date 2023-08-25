@@ -2,26 +2,63 @@
 import { Box, Grid, Typography } from "@mui/material";
 import CountUp from "react-countup";
 import dynamic from "next/dynamic";
+import heroImg from "../../public/assets/images/RestaurantOrnament.png";
+import Image from "next/image";
+const WeAre = dynamic(() => import("./WeAre"), { ssr: false });
 const OurServices = dynamic(() => import("./OurServices"), { ssr: false });
 const OurStrength = dynamic(() => import("./OurStrength"), { ssr: false });
 
 const AboutUs = () => {
-
   return (
     <>
       <Box className="dark:bg-primary">
         <Box
+          pt={{ md: 8, sm: 3, xs: 0 }}
           sx={{
-            backgroundImage: `url('https://i.ibb.co/6JpY31S/about-us-banner.webp')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.ibb.co/6JpY31S/about-us-banner.webp')`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
             objectFit: "contain",
-            height: { md: "80vh", sm: "65vh", xs: "45vh" },
-            position: "relative",
+            height: { md: "95vh", sm: "80vh", xs: "60vh" },
             backgroundAttachment: "fixed",
           }}
-        ></Box>
+        >
+          <Box className="flex justify-center items-center h-full px-2 text-neutral lg:pt-0 md:pt-10 pt-8">
+            <Box className="lg:space-y-5 md:space-y-3 space-y-2">
+              <Typography
+                component="div"
+                variant={"subtitle2"}
+                fontSize={12}
+                textAlign={"center"}
+                textTransform={"uppercase"}
+                sx={{ letterSpacing: "0.3em" }}
+                className="text-primary"
+              >
+                our story
+              </Typography>
+              <Image
+                src={heroImg}
+                alt="Hero Subtitle Image"
+                className="w-28 mx-auto"
+              />
+              <Typography
+                component="div"
+                variant={"h4"}
+                fontSize={{ md: 80, sm: 60 }}
+                textAlign={"center"}
+                width={{ md: 700, xs: 1 }}
+              >
+                About Us
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
         <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="space-y-7 pb-7">
+          {/*--------- We Are ---------*/}
+          <Box>
+            <WeAre />
+          </Box>
           {/*------- Counter Section ---------*/}
           <Box className="relative bg-gray-100 dark:bg-secondary md:py-10 py-4 lg:-mt-40 md:-mt-40 -mt-36 shadow-lg rounded-md">
             <Grid container item spacing={2}>
@@ -136,6 +173,7 @@ const AboutUs = () => {
               </Grid>
             </Grid>
           </Box>
+
           {/*--------- Our Services ---------*/}
           <Box>
             <OurServices />
