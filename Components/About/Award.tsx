@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import img1 from "../../public/assets/images/Restaurant-About-Us-Delightful-Image-2.png";
 import img2 from "../../public/assets/images/Restaurant-About-Us-Delightful-Image.png";
 import img3 from "../../public/assets/images/Restaurant-About-Us-Experience-Image.png";
 import Image from "next/image";
@@ -99,7 +100,7 @@ const Award = () => {
         {/*---- Third Section ----*/}
         <Grid item xs={12} sm={6} md={6}>
           <Box className="text-center dark:text-neutral space-y-5 dark:bg-secondary bg-gray-100 px-4 py-14 lg:h-[85vh] md:h-[120vh] flex justify-center items-center">
-            <Box>
+            <Box className="relative">
               <Typography
                 component="div"
                 variant={"subtitle2"}
@@ -160,6 +161,14 @@ const Award = () => {
                   </Button>
                 </Link>
               </Box>
+              <Image
+                src={img1}
+                alt="Icon"
+                width={200}
+                height={200}
+                priority
+                className="lg:w-52 md:w-40 absolute left-0 lg:-bottom-48 md:-bottom-44 lg:block md:block hidden"
+              />
             </Box>
           </Box>
         </Grid>

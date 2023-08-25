@@ -24,6 +24,8 @@ import Image from "next/image";
 import logo from "../../public/assets/images/logo.png";
 import { AiFillShopping } from "react-icons/ai";
 import { GoSearch } from "react-icons/go";
+import ThemeSwitcher from "@/app/ThemeSwitcher";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface Props {
   window?: () => Window;
@@ -68,7 +70,7 @@ const Header = (props: Props) => {
       className="dark:bg-secondary dark:text-neutral !h-screen"
     >
       <Link href={"/"}>
-        <Box className="relative text-center">
+        <Box className="relative text-center my-2">
           <Typography
             component="div"
             variant="h5"
@@ -180,8 +182,11 @@ const Header = (props: Props) => {
                       </Typography>
                     </Box>
                   </Link>
-
-                  <MenuIcon onClick={handleDrawerToggle} />
+                  <Box className="flex items-center gap-3">
+                    <ThemeSwitcher />
+                    {mobileOpen?<CloseIcon />:
+                    <MenuIcon onClick={handleDrawerToggle} />}
+                  </Box>
                 </Box>
                 <Typography
                   variant="h6"
@@ -271,6 +276,7 @@ const Header = (props: Props) => {
                         find a table
                       </Button>
                     </Link>
+                    <ThemeSwitcher />
                   </Box>
                 </Box>
               </Toolbar>

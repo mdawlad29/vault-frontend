@@ -187,7 +187,7 @@ const AboutUs = () => {
           <OurServices />
         </Box>
         {/*--------- Our Strength ---------*/}
-        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:py-28 py-10">
+        <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }} className="lg:pb-28 pb-10">
           <OurStrength />
         </Box>
       </Box>

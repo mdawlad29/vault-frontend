@@ -29,7 +29,7 @@ const ThemeSwitcher = () => {
     <>
       <Box
         onClick={handleClick}
-        className="dark:!bg-neutral bg-gray-800 text-neutral dark:text-black fixed left-0 top-[50%] cursor-pointer px-4 py-2 rounded-tr rounded-br hover:scale-105 hover:translate-x-1 duration-500 ease-in-out z-40"
+        // className="dark:!bg-neutral bg-gray-800 text-neutral dark:text-black fixed left-0 top-[50%] cursor-pointer px-4 py-2 rounded-tr rounded-br hover:scale-105 hover:translate-x-1 duration-500 ease-in-out z-40"
       >
         {theme === "light" ? (
           <MdDarkMode className="inline-block w-6 h-6" />
