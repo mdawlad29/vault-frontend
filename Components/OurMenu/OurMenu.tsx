@@ -1,7 +1,12 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import heroImg from "../../public/assets/images/RestaurantOrnament.png";
 import dynamic from "next/dynamic";
+const Dessert = dynamic(() => import("./Dessert"), { ssr: false });
+const Drinks = dynamic(() => import("./Drinks"), { ssr: false });
+const ReservationMenu = dynamic(() => import("./ReservationMenu"), {
+  ssr: false,
+});
 const StarterMenu = dynamic(() => import("./StarterMenu"), { ssr: false });
 
 const OurMenu = () => {
@@ -52,6 +57,12 @@ const OurMenu = () => {
         </Box>
         {/*--- Starter Menu ----*/}
         <StarterMenu />
+        {/*--- Reservation ----*/}
+        <ReservationMenu />
+        {/*--- Dessert ----*/}
+        <Dessert />
+        {/*--- Drink ----*/}
+        <Drinks />
       </Box>
     </>
   );
