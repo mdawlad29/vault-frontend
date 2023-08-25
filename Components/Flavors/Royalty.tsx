@@ -85,7 +85,7 @@ const Royalty = () => {
                 </Box>
                 {/*--- Button ---*/}
                 <Box className="text-center">
-                  <Link href="/reservation">
+                  <Link href="/restaurent/reservation">
                     <Button
                       sx={{
                         width: { md: 200 },

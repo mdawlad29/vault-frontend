@@ -1,10 +1,10 @@
 "use client";
 import { Box } from "@mui/material";
 import dynamic from "next/dynamic";
-const GlobalMetadata = dynamic(() => import("../globalMetadata"), {
+const GlobalMetadata = dynamic(() => import("../../globalMetadata"), {
   ssr: false,
 });
-const AboutUs = dynamic(() => import("../../Components/About/AboutUs"), {
+const AboutUs = dynamic(() => import("../../../Components/About/AboutUs"), {
   ssr: false,
 });
 

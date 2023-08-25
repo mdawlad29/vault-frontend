@@ -47,7 +47,7 @@ const Hero = () => {
               Flavors Inspired by the Seasons
             </Typography>
             <Box textAlign={"center"} pt={{ md: 7, sm: 3, xs: 2 }}>
-              <Link href="/our-menu">
+              <Link href="/restaurent/our-menu">
                 <Button
                   sx={{
                     width: { md: 240 },

@@ -1,10 +1,10 @@
 "use client";
 import dynamic from "next/dynamic";
-const GlobalMetadata = dynamic(() => import("../globalMetadata"), {
+const GlobalMetadata = dynamic(() => import("../../globalMetadata"), {
   ssr: false,
 });
 const ContactUs = dynamic(
-  () => import("../../Components/ContactUs/ContactUs"),
+  () => import("../../../Components/ContactUs/ContactUs"),
   {
     ssr: false,
   }

@@ -46,11 +46,11 @@ function ElevationScroll(props: Props) {
 const drawerWidth = 240;
 const navItems = [
   { name: "HOME", link: "/" },
-  { name: "MENU", link: "/our-menu" },
-  { name: "ABOUT US", link: "/about-us" },
-  { name: "RESERVATION", link: "/reservation" },
-  { name: "BLOG", link: "/blog" },
-  { name: "CONTACT US", link: "/contact-us" },
+  { name: "MENU", link: "/restaurent/our-menu" },
+  { name: "ABOUT US", link: "/restaurent/about-us" },
+  { name: "RESERVATION", link: "/restaurent/reservation" },
+  { name: "BLOG", link: "/restaurent/blog" },
+  { name: "CONTACT US", link: "/restaurent/contact-us" },
 ];
 
 const Header = (props: Props) => {
@@ -115,7 +115,7 @@ const Header = (props: Props) => {
         ))}
       </List>
       <Box mx={2}>
-        <Link href="/reservation">
+        <Link href="/restaurent/reservation">
           <Button
             sx={{
               width: 1,
@@ -252,7 +252,7 @@ const Header = (props: Props) => {
                     alignItems={"center"}
                     gap={2}
                   >
-                    <Link href="/reservation">
+                    <Link href="/restaurent/reservation">
                       <Button
                         sx={{
                           width: { md: 170 },

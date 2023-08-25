@@ -100,7 +100,7 @@ const FlavorsLobster = () => {
                 </Box>
                 {/*--- Button ---*/}
                 <Box textAlign={{ md: "start", sm: "center", xs: "center" }}>
-                  <Link href="/reservation">
+                  <Link href="/restaurent/reservation">
                     <Button
                       sx={{
                         width: { md: 200 },

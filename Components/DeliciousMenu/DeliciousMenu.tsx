@@ -86,7 +86,7 @@ const DeliciousMenu = () => {
             During winter daily from 7:00 pm to 9:00 pm
           </Typography>
           <Box>
-            <Link href="/reservation">
+            <Link href="/restaurent/reservation">
               <Button
                 sx={{
                   width: { md: 200 },

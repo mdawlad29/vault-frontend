@@ -1,7 +1,7 @@
 "use client"
 import dynamic from "next/dynamic";
 import { Box, Typography } from "@mui/material";
-const GlobalMetadata = dynamic(() => import("../globalMetadata"), {
+const GlobalMetadata = dynamic(() => import("../../globalMetadata"), {
   ssr: false,
 });
 

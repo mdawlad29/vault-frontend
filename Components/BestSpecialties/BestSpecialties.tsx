@@ -129,7 +129,7 @@ const BestSpecialties = () => {
               ))}
             </Grid>
             <Box textAlign={"center"} mt={{ md: 10, sm: 4, xs: 5 }}>
-              <Link href="/reservation">
+              <Link href="/restaurent/reservation">
                 <Button
                   sx={{
                     width: { md: 200 },
