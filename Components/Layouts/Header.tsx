@@ -45,7 +45,6 @@ function ElevationScroll(props: Props) {
   });
 }
 
-const drawerWidth = 240;
 const navItems = [
   { name: "HOME", link: "/" },
   { name: "MENU", link: "/restaurent/our-menu" },
@@ -145,18 +144,18 @@ const Header = (props: Props) => {
 
   return (
     <>
-      <Box sx={{ display: "flex" }}>
+      <Box>
         <CssBaseline />
         <ElevationScroll {...props}>
           <AppBar
             component="nav"
             className="dark:!bg-secondary !bg-neutral dark:!text-neutral !text-gray-900"
           >
-            <Box sx={{ px: { md: 8, sm: 4, xs: 3 } }}>
-              <Toolbar disableGutters={true}>
+            <Box sx={{ px: { md: 8, sm: 4, xs: 3 }, width: 1 }}>
+              <Toolbar disableGutters={true} sx={{ width: 1 }}>
                 <Box
                   sx={{
-                    display: { sm: "none", xs: "flex" },
+                    display: { md: "none", sm: "flex", xs: "flex" },
                     justifyContent: "space-between",
                     alignItems: "center",
                     p: 0,
@@ -182,10 +181,13 @@ const Header = (props: Props) => {
                       </Typography>
                     </Box>
                   </Link>
-                  <Box className="flex items-center gap-3">
+                  <Box className="flex items-center md:gap-6 gap-3">
                     <ThemeSwitcher />
-                    {mobileOpen?<CloseIcon />:
-                    <MenuIcon onClick={handleDrawerToggle} />}
+                    {mobileOpen ? (
+                      <CloseIcon onClick={handleDrawerToggle} />
+                    ) : (
+                      <MenuIcon onClick={handleDrawerToggle} />
+                    )}
                   </Box>
                 </Box>
                 <Typography
@@ -193,7 +195,7 @@ const Header = (props: Props) => {
                   component="div"
                   sx={{
                     flexGrow: 1,
-                    display: { xs: "none", sm: "block" },
+                    display: { xs: "none", sm: "none", md: "block" },
                     textTransform: "capitalize !important",
                     fontSize: 26,
                   }}
@@ -220,7 +222,7 @@ const Header = (props: Props) => {
                 </Typography>
                 <Box
                   sx={{
-                    display: { xs: "none", sm: "block" },
+                    display: { xs: "none", sm: "none", md: "block" },
                   }}
                 >
                   {navItems.map((item: any, index) => (
@@ -245,7 +247,7 @@ const Header = (props: Props) => {
                 <Box
                   sx={{
                     flexGrow: 1,
-                    display: { xs: "none", sm: "block" },
+                    display: { xs: "none", sm: "none", md: "block" },
                     textTransform: "capitalize !important",
                     fontSize: 26,
                   }}
@@ -295,10 +297,10 @@ const Header = (props: Props) => {
               keepMounted: true,
             }}
             sx={{
-              display: { xs: "block", sm: "none" },
+              display: { xs: "block", sm: "block", md: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
-                width: drawerWidth,
+                width: 240,
               },
             }}
           >

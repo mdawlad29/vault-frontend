@@ -42,7 +42,7 @@ const Royalty = () => {
                   textAlign={"center"}
                   fontSize={{ md: 48, sm: 36, xs: 24 }}
                   className="dark:text-neutral z-10 mx-auto"
-                  width={{ md: 300, xs: 1 }}
+                  width={{ md: 300, sm: 1, xs: 1 }}
                   mt={6}
                 >
                   Every Flavor Tells a Story
@@ -132,11 +132,11 @@ const Royalty = () => {
                     priority
                   />
                 </Box>
-                <Box className="relative lg:-mt-40 lg:left-10 md:left-52 xs:left-14 xxs:left-9 -mt-28">
+                <Box className="relative lg:-mt-40 lg:left-10 md:left-0 xs:left-6 xxs:left-4 -mt-28">
                   <Image
                     src={patternImg}
                     alt="Restaurant Flavors"
-                    className="lg:h-96 md:h-80 h-60 object-contain"
+                    className="lg:h-96 md:h-80 h-60 object-contain md:ml-48 xs:ml-7"
                     width={300}
                     height={400}
                     priority
@@ -144,7 +144,7 @@ const Royalty = () => {
                   <Image
                     src={itemImg1}
                     alt="Restaurant Flavors"
-                    className="lg:h-80 md:h-60 h-48 object-contain absolute lg:top-8 lg:-left-36 md:top-10 md:-left-36 xs:-left-14 xxs:-left-8 top-6"
+                    className="lg:h-80 md:h-60 h-48 object-contain absolute lg:top-8 lg:-left-36 md:top-10 md:left-10 xs:-left-4 xxs:-left-2 top-6"
                     width={600}
                     height={400}
                     priority
