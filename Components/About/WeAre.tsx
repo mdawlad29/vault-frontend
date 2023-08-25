@@ -1,11 +1,9 @@
 import React from "react";
-import { Box, Typography, Grid, Button } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import Image from "next/image";
-import heroImg from "../../public/assets/images/RestaurantOrnament.png";
-import Link from "next/link";
 import RestaurantOrnament from "../../public/assets/images/RestaurantOrnament.png";
 import strengthImg from "../../public/assets/images/strengthImg.png";
-import RestaurantImg from "../../public/assets/images/Restaurant-Story-Image-2.png";
+import RestaurantImg from "../../public/assets/images/Restaurant-About-Us-Experience-Image.png";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const WeAre = () => {

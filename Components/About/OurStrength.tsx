@@ -9,19 +9,38 @@ import strengthIcon from "../../public/assets/images/strengthIcon.png";
 import strengthIcon1 from "../../public/assets/images/freshIcon.png";
 import strengthIcon2 from "../../public/assets/images/skillIcon.png";
 import strengthIcon3 from "../../public/assets/images/eventIcon.png";
+import RestaurantOrnament from "../../public/assets/images/RestaurantOrnament.png";
 
 const OurStrength = () => {
   return (
     <>
       <Typography
-        component={"div"}
-        variant="h4"
+        component="div"
+        variant={"subtitle2"}
+        fontSize={12}
+        textAlign={"center"}
+        textTransform={"uppercase"}
+        sx={{ letterSpacing: "0.3em", mb: 2 }}
+        className="text-primary"
+      >
+        WHY CHOOSE US
+      </Typography>
+      <Image
+        src={RestaurantOrnament}
+        alt="Hero Subtitle Image"
+        className="w-28 mx-auto"
+      />
+      <Typography
+        component="div"
+        variant="h3"
         display={"block"}
         textAlign={"center"}
-        py={4}
-        className="dark:text-darkTextColor"
+        fontSize={{ md: 48, sm: 36, xs: 24 }}
+        className="dark:text-neutral z-10 mx-auto"
+        width={{ md: 800, xs: 1 }}
+        my={5}
       >
-        Our Services
+        our strength
       </Typography>
       <Grid container spacing={2}>
         {Array.from(Array(4))?.map((item: any, index) => (
