@@ -60,7 +60,7 @@ const AboutUs = () => {
           {/*--------- We Are ---------*/}
           <WeAre />
           {/*------- Counter Section ---------*/}
-          <Box mt={8} border={"1px solid red"}>
+          <Box mt={8}>
             <Grid container item spacing={2}>
               {/*---- Daily Order -----*/}
               <Grid item xs={6} md={3}>
